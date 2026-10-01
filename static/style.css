@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: Arial, sans-serif; background: #f4f7fb;
+  color: #172033; font-size: 18px;
+}
+header {
+  background: #123b68; color: white; padding: 22px 7%;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand { font-size: 30px; font-weight: 800; letter-spacing: 1px; }
+.tagline { font-size: 18px; }
+main { max-width: 900px; margin: 35px auto; padding: 0 20px; }
+.hero { text-align: center; margin-bottom: 28px; }
+.hero h1 { font-size: 42px; margin-bottom: 10px; }
+.hero p { line-height: 1.6; }
+.tabs { display: flex; gap: 10px; margin-bottom: 15px; }
+.tab {
+  flex: 1; padding: 18px; border: 2px solid #cbd5e1; background: white;
+  border-radius: 12px; font-size: 20px; cursor: pointer;
+}
+.tab.active { background: #123b68; color: white; }
+.panel {
+  display: none; background: white; padding: 25px; border-radius: 16px;
+  box-shadow: 0 4px 15px #00000012;
+}
+.active-panel { display: block; }
+textarea, input {
+  width: 100%; padding: 18px; font-size: 18px; border: 2px solid #cbd5e1;
+  border-radius: 10px; margin: 12px 0 18px;
+}
+textarea { min-height: 180px; resize: vertical; }
+.primary {
+  width: 100%; padding: 18px; border: 0; border-radius: 10px;
+  background: #1769aa; color: white; font-size: 20px; font-weight: 700; cursor: pointer;
+}
+.result {
+  margin-top: 22px; padding: 25px; border-radius: 16px; background: white;
+  border-left: 10px solid #64748b;
+}
+.result.high { border-left-color: #c62828; }
+.result.caution { border-left-color: #d97706; }
+.result.low { border-left-color: #2e7d32; }
+.badge {
+  display: inline-block; padding: 10px 16px; border-radius: 20px;
+  color: white; font-weight: 700;
+}
+.badge.high { background: #c62828; }
+.badge.caution { background: #d97706; }
+.badge.low { background: #2e7d32; }
+.score { font-size: 20px; margin: 15px 0; }
+.safety-box { background: #fff8e1; margin-top: 22px; padding: 22px; border-radius: 16px; }
+li { margin: 12px 0; line-height: 1.5; }
+footer { text-align: center; padding: 25px; color: #64748b; font-size: 14px; }
+.hidden { display: none; }
+@media (max-width: 650px) {
+  header { display: block; text-align: center; }
+  .tagline { margin-top: 8px; }
+  .hero h1 { font-size: 34px; }
+}

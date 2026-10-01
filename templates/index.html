@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SurakshaAI - Digital Safety Companion</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header>
+  <div class="brand">SURAKSHAAI</div>
+  <div class="tagline">Pause. Check. Stay Safe.</div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Can I trust this?</h1>
+    <p>Check a suspicious message or link before you click, reply or share personal information.</p>
+  </section>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="message">Message Checker</button>
+    <button class="tab" data-tab="url">Link Checker</button>
+  </div>
+
+  <section id="message" class="panel active-panel">
+    <h2>Check a message</h2>
+    <textarea id="messageInput" placeholder="Paste the SMS or message here..."></textarea>
+    <button class="primary" onclick="checkMessage()">Check Message</button>
+  </section>
+
+  <section id="url" class="panel">
+    <h2>Check a link</h2>
+    <input id="urlInput" type="text" placeholder="Paste the website link here...">
+    <button class="primary" onclick="checkUrl()">Check Link</button>
+  </section>
+
+  <section id="result" class="result hidden"></section>
+
+  <section class="safety-box">
+    <h2>Remember</h2>
+    <ul>
+      <li>Never share your OTP, PIN or password.</li>
+      <li>Do not click links just because a message says “urgent”.</li>
+      <li>Verify important requests through official channels.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>Prototype • AI-assisted risk indicators, not a guarantee of safety</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

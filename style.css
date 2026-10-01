@@ -1,0 +1,102 @@
+/* ==========================================
+   SURAKSHAAI V1 - APP UI
+   ========================================== */
+
+.main-title {
+    text-align: center;
+    font-size: 46px;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================
+   DASHBOARD CARDS
+   ========================================== */
+
+.info-card {
+    padding: 22px;
+    border-radius: 16px;
+    margin: 10px 0;
+    border: 1px solid rgba(128, 128, 128, 0.3);
+}
+
+
+/* ==========================================
+   RISK RESULT
+   ========================================== */
+
+.risk-card {
+    padding: 28px;
+    border-radius: 18px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px solid rgba(128, 128, 128, 0.35);
+}
+
+.risk-title {
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.risk-score {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+.risk-message {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* ==========================================
+   SAFETY CARDS
+   ========================================== */
+
+.safe-card {
+    border: 2px solid #28a745;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.warning-card {
+    border: 2px solid #ffc107;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.danger-card {
+    border: 2px solid #dc3545;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+.footer {
+    text-align: center;
+    margin-top: 45px;
+    padding: 20px;
+    font-size: 13px;
+    opacity: 0.75;
+}
